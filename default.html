@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Coolest Controller</title>
+    <link href="ext/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="ext/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div class='container'>
+        <div class='text-center'>
+            <h1>Jeuj! Ik heb een coole controller!</h1>
+            <img src='images/controller.png' />
+            <h3>Maar wat ben ik daar nu mee?</h3>
+        </div>
+
+
+        <div class='row'>
+            <!-- Gamen -->
+            <div class='col-md-4'>
+                <div class='topic'>
+                    <h2>Gamen!</h2>
+                    <p>
+                        Heel veel games zullen gewoon werken met de controller.
+                        Niks configureren: gewoon inpluggen, beginnen gamen en doen alsof je niks
+                        gehoord hebt als je moet helpen met de afwas ;-)</p>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Minecraft -->
+            <div class='col-md-4'>
+                <div class='topic'>
+                    <h2>Minecraft?</h2>
+                    <p>
+                        Helaas pindakaas, Minecraft kan je niet zomaar bedienen met een controller...
+                        Maar daar trekt een digitale maker zoals jij zich natuurlijk niets van aan!
+                        Met het programma <a href='http://joytokey.net/en/download'>'JoyToKey'</a>
+                        (enkel Windows) kan je met de controller je muis en toetsenbord nabootsen:
+                       
+                    </p>
+                    <ul>
+                        <li>Download <a href='http://joytokey.net/download/JoyToKey_en.zip'>JoyToKey_en.zip</a> en bewaar het op je bureaublad;</li>
+                        <li>Pak het zip-bestand uit;</li>
+                        <li>Dubbelklik op 'JoyToKey.exe';</li>
+                        <li>Je kan muis- en toetsenbordfuncties toekennen aan elke knop van de controller!</li>
+                    </ul>
+                    <div class='text-center'>
+                        <img src='images/joytokey.png'/>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scratch -->
+            <div class='col-md-4'>
+                <div class='topic'>
+                    <h2>Scratch (offline)</h2>
+                    <p>
+                        Spelen is plezant. Zelf spelletjes maken nog plezanter!
+                        Met <a href='https://github.com/kurtdevocht/gamepad2scratch'>Gamepad2Scratch</a>
+                        kan je de controller aan de offline-versie van <a href='https://scratch.mit.edu/scratch2download/'>Scratch</a> hangen.
+                                          
+                    </p>
+                    <ul>
+                        <li><strong>Windows computer? - </strong>Download <a href='media/gamepad2scratch-win.zip'>gamepad2scratch-win.zip</a> en bewaar het op je bureablad;</li>
+                        <li><strong>Mac computer? - </strong>Download <a href='media/gamepad2scratch-mac.zip'>gamepad2scratch-mac.zip</a> en bewaar het op je bureablad;</li>
+                        <li>Pak het zip-bestand uit;</li>
+                        <li>Open de uitgepakte map en klik op 'gamepad2scratch';</li>
+                    </ul>
+                    <div class='text-center'>
+                        <iframe width="300" height="175" src="https://www.youtube.com/embed/wW8wQF-oeUw" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class='row'>
+            <!-- JavaScript -->
+            <div class='col-md-4'>
+                <div class='topic'>
+                    <h2>JavaScript</h2>
+                    <p>
+                        Is JavaScript jouw ding?
+                    </p>
+                    <p>
+                        In sommige browsers (o.a. Chrome) kan je de
+                        <a href='https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API'>
+                        HTML5 Gamepad API
+                        </a>
+                        gebruiken. Een voorbeeld vind je op <a href='http://html5gamepad.com/'>html5gamepad.com</a>
+                    </p>
+                     <p>
+                        Ben je meer een <a href='https://nodejs.org/en/'>Node.js</a>-hipster die graag miljarden packages verslindt?
+                        Je kan <a href='https://www.npmjs.com/package/node-hid'>node-hid</a>
+                        gebruiken om usb toestellen uit te lezen.
+                        <a href='https://github.com/kurtdevocht/gamepad2scratch'>Hier</a> vind je een voorbeeld hoe de controller uitgelezen can worden.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Python -->
+            <div class='col-md-4'>
+                <div class='topic'>
+                    <h2>Python 2.7</h2>
+                    <p>
+                        Python-fan?
+                    
+
+                    </p>
+                    <ul>
+                        <li>Installeer <a href='https://www.pygame.org/'>PyGame</a></li>
+                        <li>Probeer deze code</li>
+                    </ul>
+                    <pre class='code'>
+import pygame
+pygame.display.init()
+pygame.joystick.init()
+_joystick = pygame.joystick.Joystick(0)
+_joystick.init()
+while True:
+    pygame.event.pump()
+    print _joystick.get_axis(0)</pre>
+                </div>
+
+            </div>
+
+            <!-- Raspberry Pi -->
+            <div class='col-md-4'>
+                <div class='topic'>
+                    <h2>Raspberry Pi</h2>
+                    <p>
+                        Heb je een <a href='https://www.raspberrypi.org/'>Raspberry Pi?</a> Probeer dan eens een
+                        <a href='https://www.recalbox.com/diyrecalbox'>recalbox</a> te bouwen!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class='row'> 
+            <!-- Unity -->
+            <div class='col-md-4'>
+                <div class='topic'>
+                    <h2>Unity</h2>
+                    <p>
+                        2D-spelletjes te plat voor jou? Met <a href='https://unity3d.com/'>Unity</a>
+                        heb je meteen een extra dimensie.
+                        Ondersteuning voor gamecontrollers zit ingebakken!
+                    </p>
+                </div>
+            </div>
+
+             <!-- Wat nog -->
+            <div class='col-md-8'>
+                <div class='topic'>
+                    <h2>Nog ideetjes nodig?</h2>
+                    <p>
+                        Ga vooral ook zelf op zoek ;-)
+                        Blijf spelen, blijf experimenteren, blijf bouwen en wie weet:
+                        tot op Coolest Projects 2018?
+                    </p>
+                    <div class='text-center'>
+                        <img src='images/dunno.gif'/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    <div class='container'>
+        <div class='row'>
+            <div class='topic'>
+                <h1>1 - Plug de controller in</h1>
+                <div class='text-center'>
+                    <canvas id='controllerCanvas' width=500, height=300></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class='row'>
+            <div class='col-md-4'>
+                <div class='topic'>
+                    <h1>2 - Installeer Scratch</h1>
+                    <p>
+                       De controller werkt enkel met de <strong>offline versie</strong> van Scratch. Deze vind je op <a href='_' id='linkExtScratchOffline'>https://scratch.mit.edu/scratch2download/</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class='col-md-4 chapter'>
+                <div class='topic'>
+                    <h1>3 - Speeltijd!</h1>
+                    <p>In de map <a href='_' id='linkDirScratch1'>_</a> vind je Scratch-projecten waarmee je meteen kan starten:</p>
+                    <div class='row'>
+                        <div class='col-xs-6 text-center'>
+                            <button id='btnBestuurEenDing' class='btn btn-primary'><i class="fa fa-file"></i> Bestuur een aap</button></td>
+                        </div>
+                        <div class='col-xs-6 text-center'>
+                            <button id='btnOpenAlleKnoppen' class='btn btn-primary'><i class="fa fa-file"></i> Test alle knoppen</button></td>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='col-md-4 chapter'>
+                <div class='topic'>
+                    <h1>4 - Bouw zelf iets!</h1>
+                    <p>Ofwel vertrek je van een leeg project waarin de extra blokken al geladen zijn:</p>
+                    <div class='text-center'>
+                        <p><button id='btnOpenLeegProject' class='btn btn-primary'><i class="fa fa-file"></i> Leeg project</button></p>
+                    </div>
+                    <p>Ofwel laad je de extra blokken in een bestaand project:</p>
+                    <p>
+                        <ol>
+                            <li>Open je Scratch-project</li>
+                            <li>Houd de <strong>SHIFT-toets</strong> ingedrukt terwijl je op het menu <strong>'Bestand'</strong>                                klikt</li>
+                            <li>Klik op <strong>'Importeer experimentele HTTP-uitbreiding'</strong></li>
+                            <li>Ga naar de map <a href='_' id='linkDirScratch2'>_</a> en open <strong>'Gamepad2Scratch uitbreiding.s2e'</strong></li>
+                            <li>Bij <strong>Meer blokken</strong> vind je nu extra blokken om de controller uit te lezen</li>
+                        </ol>
+                    </p>
+                </div>
+            </div>
+        </div>
+        -->
+</body>
+
+</html>
